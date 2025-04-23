@@ -367,4 +367,5 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     gap: 3px;
+    transition: .1s ease;
 }

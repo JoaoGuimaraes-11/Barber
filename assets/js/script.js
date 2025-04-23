@@ -1,4 +1,6 @@
-const showPics = document.querySelector('#showPics');
+
+function showAndHiddenMoreImages(){
+    const showPics = document.querySelector('#showPics');
 
 showPics.addEventListener('click', ()=>{
     const showImages = document.querySelector('.gallery-container-hidden');
@@ -9,3 +11,5 @@ showPics.addEventListener('click', ()=>{
         showPics.innerText = 'Ver mais'
     }
 })
+}
+showAndHiddenMoreImages();
