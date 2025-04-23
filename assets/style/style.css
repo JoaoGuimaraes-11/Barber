@@ -329,7 +329,7 @@ body{
 .pics-gallery span{
     color: var(--secundary-color);
 }
-.gallery-container{
+.gallery-container, .gallery-container-hidden{
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
@@ -338,10 +338,10 @@ body{
     gap: 3px;
     margin-top: 15px;
 }
-.imgs-gallery{
+.imgs-gallery, .imgs-hidden{
     width: 45%;
 }
-.imgs-gallery img{
+.imgs-gallery img, .imgs-hidden img{
     width: 100%;
     height: 450px;
     object-fit: cover;
@@ -354,4 +354,17 @@ body{
     max-width: 1400px;
     margin: 0 auto;
     margin-top: 15px;
+}
+.gallery-container-hidden{
+    display: none;
+}
+.gallery-container-hidden.active{
+    display: block;
+}
+.container-none-image{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3px;
 }
